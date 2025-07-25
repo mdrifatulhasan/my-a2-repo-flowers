@@ -39,3 +39,37 @@ body {
 .cart {
   font-weight: bold;
 }
+
+/* Banner */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  background-color: #f1f3f9;
+}
+
+.banner-text {
+  max-width: 50%;
+}
+
+.banner-text h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.banner-text .highlight {
+  color: #e86900;
+  font-weight: bold;
+}
+
+.banner-text p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+.banner-image img {
+  max-width: 100%;
+  height: auto;
+}
