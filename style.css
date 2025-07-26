@@ -350,3 +350,66 @@ body {
 .newsletter-form button:hover {
   background-color: #c75100;
 }
+
+/* Footer Section */
+.footer {
+  background-color: #f1f3f9;
+  padding: 60px 30px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.footer-left img {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.footer-left p {
+  color: #666;
+  max-width: 250px;
+  line-height: 1.6;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-links div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #e86900;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-social img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
+}
