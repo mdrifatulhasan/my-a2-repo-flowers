@@ -186,7 +186,7 @@ body {
 /* Animation */
 .trusted-badge {
   position: absolute;
-  top: -150px;
+  top: -160px;
   right: 500px;
   width: 200px;
   animation: rotateBadge 5s linear infinite;
@@ -412,4 +412,158 @@ body {
 
 .footer-social img:hover {
   transform: scale(1.1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav-links a:not(:last-child) {
+    display: none;
+  }
+
+  .nav-links a {
+    font-weight: normal;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    padding: 10px 30px;
+  }
+
+  /* Banner */
+  .banner {
+    flex-direction: column;
+    text-align: left;
+    gap: 30px;
+    padding: 0px;
+  }
+
+  .banner-image {
+    order: -1;
+  }
+
+  .banner-text {
+    max-width: 100%;
+    padding: 0 15px;
+    text-align: left;
+  }
+
+  .banner-text h1 {
+    font-size: 30px;
+  }
+
+  /* Plants Section */
+  .plant-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  .plants-section {
+    padding: 20px;
+  }
+
+  .plants-section h2 {
+    font-size: 30px;
+  }
+
+  .plant-card {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .plant-card img {
+    border-radius: 0%;
+  }
+
+  .plant-card .add-btn {
+    border-radius: 0%;
+  }
+
+  /* Plants Lover Section */
+  .lover-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .lover-image img {
+    width: 100%;
+  }
+
+  .lover-text {
+    padding: 0 15px;
+  }
+
+  .plants-lover {
+    padding: 20px;
+  }
+
+  .lover-text h2 {
+    font-size: 30px;
+  }
+
+  /* Trusted Badge */
+  .trusted-badge {
+    display: none;
+  }
+
+  /* Latest Deals */
+  .deal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .deal-card,
+  .deal-card.wide {
+    height: auto;
+    min-height: 200px;
+  }
+
+  .latest-deals {
+    padding: 20px;
+  }
+
+  .latest-deals h2 {
+    font-size: 30px;
+  }
+
+  /* Join Section */
+  .newsletter-form {
+    flex-direction: row;
+  }
+
+  .newsletter-form input[type="email"] {
+    width: 100%;
+  }
+
+  .newsletter-form button {
+    width: 40%;
+  }
+
+  .newsletter h2 {
+    font-size: 20px;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-social {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .footer-left p {
+    max-width: none;
+  }
+
+  .footer-left img {
+    height: 100px;
+  }
 }
