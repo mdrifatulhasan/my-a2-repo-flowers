@@ -142,3 +142,65 @@ body {
 .add-btn:hover {
   background-color: #cc5800;
 }
+
+/* Plants Lover Section */
+.plants-lover {
+  background-color: #f1f3f9;
+  padding: 60px;
+}
+
+.lover-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.lover-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.lover-text {
+  flex: 1;
+  position: relative;
+}
+
+.lover-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.lover-text ul {
+  padding-left: 20px;
+  color: #666;
+}
+
+.lover-text li {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/* Animation */
+.trusted-badge {
+  position: absolute;
+  top: -150px;
+  right: 500px;
+  width: 200px;
+  animation: rotateBadge 5s linear infinite;
+}
+
+.trusted-badge img {
+  width: 100%;
+}
+
+@keyframes rotateBadge {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
