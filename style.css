@@ -287,3 +287,66 @@ body {
   text-decoration: underline;
   font-weight: 600;
 }
+
+/* Join Section */
+.newsletter {
+  background-image: url("./assets/news-letter-bg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.newsletter::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.newsletter-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: auto;
+}
+
+.newsletter h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.newsletter-form {
+  display: flex;
+  max-width: 100%;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.newsletter-form input[type="email"] {
+  flex: 1;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.newsletter-form button {
+  padding: 15px 30px;
+  background-color: #e86900;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #c75100;
+}
